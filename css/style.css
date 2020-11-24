@@ -1,3 +1,5 @@
+/* Dentestic - Guías de color*/
+
 :root {
     --RojoDentestic: #FF0000;
     --VerdeDentestic: #22D09B;
@@ -10,13 +12,10 @@
 }
 
 
-/* Ajustes generales / estilos dentestic*/
+/* Dentestic - Guías de color - Fin*/
 
-html,
-body {
-    font-family: "Montserrat";
-    -webkit-font-smoothing: antialiased;
-}
+
+/* Sección estilos dentestic - Ajustes generales*/
 
 body {
     font-family: 'Encode sans', sans-serif;
@@ -98,14 +97,15 @@ ol {
 }
 
 
-/*---------------------
-  Helper CSS
------------------------*/
+/* Sección estilos dentestic - Ajustes generales - Fin*/
+
+
+/*Sección de Índices/Rutas*/
 
 .section-title h2 {
     font-family: "Quicksand" sans-serif;
     color: var(--VerdeDentestic);
-    font-size: 50px;
+    font-size: 90px;
     font-weight: 700;
     margin-bottom: 10px;
     text-transform: lowercase;
@@ -113,11 +113,12 @@ ol {
 
 .section-title p {
     font-family: "Montserrat";
+    font-size: 20px;
+    color: var(--GrisDentestic);
+    font-weight: 500;
     color: var(--BlancoDentestic);
-    font-weight: 400;
-    color: var(--BlancoDentestic);
-    margin-bottom: 0;
-    line-height: 30px;
+    line-height: 40px;
+    padding-top: 20px;
 }
 
 .set-bg {
@@ -150,10 +151,13 @@ ol {
 }
 
 
-/* buttons */
+/*Sección de Índices/Rutas - Fin*/
+
+
+/* Sección de estilos de botones Dentestic */
 
 .boxed-btn3-white {
-    color: var(--GrisSecundario);
+    color: var(--NegroDentestic);
     display: inline-block;
     padding: 9px 24px;
     font-family: "Quicksand", sans-serif;
@@ -175,15 +179,17 @@ ol {
 }
 
 .boxed-btn3-white:hover {
-    background: var(--GrisSecundario);
+    border: 2px solid var(--VerdeSecundario);
     color: var(--VerdeDentestic) !important;
     border: 2px solid transparent;
 }
 
 .boxed-btn3-white {
+    background: var(--GrisSecundario);
     margin-top: 25px;
     margin-bottom: 10px;
     align-items: center;
+    font-weight: 700;
 }
 
 .boxed-btn3-white:focus {
@@ -226,7 +232,7 @@ ol {
 }
 
 .primary-btn:after {
-    color: #fff;
+    color: var(--NegroDentestic);
     -webkit-transition-duration: 500ms;
     -o-transition-duration: 500ms;
     transition-duration: 500ms;
@@ -300,7 +306,10 @@ ol {
 }
 
 
-/* Preloder */
+/* Sección de estilos de botones Dentestic - Fin */
+
+
+/* Sección para el preloader */
 
 #preloder {
     position: fixed;
@@ -309,7 +318,7 @@ ol {
     top: 0;
     left: 0;
     z-index: 999999;
-    background: #000;
+    background: var(--NegroDentestic);
 }
 
 .loader {
@@ -365,9 +374,10 @@ ol {
 }
 
 
-/*---------------------
-  Header
------------------------*/
+/* Sección para el preloader - Fin */
+
+
+/* Sección de Header Dentestic */
 
 .header-section {
     padding-top: 35px;
@@ -550,6 +560,9 @@ ol {
 }
 
 
+/* Sección de Header Dentestic - Fin */
+
+
 /*  Sección Slider estático "hero-items" en main.js */
 
 .HeroSuperiorSlogan {
@@ -714,7 +727,7 @@ ol {
 }
 
 .bg-grey {
-    background-color: #464646;
+    background-color: var(--GrisSecundario);
 }
 
 .bg-green {
@@ -758,17 +771,191 @@ ol {
 }
 
 .SloganDentestic {
-    width: 35%;
+    margin-top: 45px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 360px) and (max-width: 766px) {
+    .SloganDentestic {
+        width: 65%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1920px) {
+    .SloganDentestic {
+        width: 21%;
+    }
 }
 
 
-/*---------------------
-  feature Item
------------------------*/
+/*  Sección Slider estático "hero-items" en main.js - Fin */
+
+
+/* Sección Bienvenidos, somos dentestic */
+
+.section-titleSVG1 img {
+    width: 100%;
+    padding-top: 25%;
+    padding-bottom: 10%;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+}
+
+.welcome_docmed_area {
+    padding-top: 80px;
+    padding-bottom: 170px;
+}
+
+@media (max-width: 767px) {
+    .welcome_docmed_area {
+        padding-top: 90px;
+        padding-bottom: 60px;
+    }
+}
+
+.welcome_docmed_area .welcome_thumb {
+    position: relative;
+}
+
+.welcome_docmed_area .welcome_thumb .thumb_1 {
+    left: 0;
+}
+
+.welcome_docmed_area .welcome_thumb .thumb_1 img {
+    width: 70%;
+    padding-top: 15%;
+}
+
+@media (max-width: 767px) {
+    .welcome_docmed_area .welcome_thumb .thumb_1 img {
+        width: 80%;
+    }
+}
+
+.welcome_docmed_area .welcome_thumb .thumb_2 {
+    position: absolute;
+    bottom: -124px;
+    right: -37px;
+}
+
+@media (max-width: 767px) {
+    .welcome_docmed_area .welcome_thumb .thumb_2 {
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .welcome_docmed_area .welcome_thumb .thumb_2 {
+        position: absolute;
+        right: 0;
+        bottom: -40px;
+    }
+}
+
+.welcome_docmed_area .welcome_thumb .thumb_2 img {
+    width: 82%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .welcome_docmed_area .welcome_thumb .thumb_2 img {
+        width: 100%;
+    }
+}
+
+.welcome_docmed_area .welcome_docmed_info {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@media (max-width: 767px) {
+    .welcome_docmed_area .welcome_docmed_info {
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 30px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .welcome_docmed_area .welcome_docmed_info {
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 30px;
+    }
+}
+
+
+/*
+.welcome_docmed_area .welcome_docmed_info h1 {
+    font-size: 37px;
+    font-weight: 400;
+    color: var(--VerdeSecundario);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    position: relative;
+    z-index: 9;
+    padding-bottom: 9px;
+}
+
+.welcome_docmed_area .welcome_docmed_info h3 {
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    color: var(--BlancoDentestic);
+}
+
+@media (max-width: 767px) {
+    .welcome_docmed_area .welcome_docmed_info h3 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .welcome_docmed_area .welcome_docmed_info h3 br {
+        display: none;
+    }
+} 
+*/
+
+.welcome_docmed_area .welcome_docmed_info p {
+    font-size: 20px;
+    color: var(--GrisDentestic);
+    text-align: left;
+    padding-bottom: 35px;
+    line-height: 35px;
+}
+
+.welcome_docmed_area .welcome_docmed_info ul {
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.welcome_docmed_area .welcome_docmed_info ul li {
+    color: var(--GrisDentestic);
+    font-size: 20px;
+    line-height: 38px;
+    list-style: none;
+}
+
+.welcome_docmed_area .welcome_docmed_info ul li i {
+    margin-right: 20px;
+    color: var(--VerdeDentestic);
+    font-weight: 20px;
+}
+
+
+/* Sección Bienvenidos, somos dentestic - Fin */
+
+
+/*Sección Servicio, Calidad & Garantía Dentestic*/
 
 .feature-item {
     text-align: center;
-    height: 350px;
+    height: 450px;
     margin-left: -15px;
     margin-right: -15px;
     padding: 100px 15px 15px;
@@ -799,15 +986,15 @@ ol {
     font-size: 40px;
     font-weight: 700;
     text-transform: lowercase;
+    margin-top: 30px;
     margin-bottom: 25px;
 }
 
 .feature-item p {
     font-family: "Montserrat";
     font-size: 17px;
-    font-weight: 300;
+    font-weight: 400;
     color: var(--BlancoDentestic);
-    margin-bottom: 50px;
 }
 
 .feature-item .primary-btn.f-btn:hover:after {
@@ -815,155 +1002,7 @@ ol {
 }
 
 
-/* Sección Bienvenidos, somos dentestic */
-
-.welcome_docmed_area {
-    padding-top: 120px;
-    padding-bottom: 100px;
-}
-
-@media (max-width: 767px) {
-    .welcome_docmed_area {
-        padding-bottom: 100px;
-    }
-}
-
-@media (min-width: 992px) and (max-width: 1200px) {
-    .welcome_docmed_area {
-        padding-bottom: 100px;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-    .welcome_docmed_area {
-        padding-bottom: 100px;
-    }
-}
-
-.welcome_docmed_area .welcome_thumb {
-    position: relative;
-}
-
-.welcome_docmed_area .welcome_thumb .thumb_1 {
-    left: 0;
-}
-
-.welcome_docmed_area .welcome_thumb .thumb_1 img {
-    width: 60%;
-}
-
-@media (max-width: 767px) {
-    .welcome_docmed_area .welcome_thumb .thumb_1 img {
-        width: 100%;
-    }
-}
-
-.welcome_docmed_area .welcome_thumb .thumb_2 {
-    position: absolute;
-    bottom: -94px;
-    right: -37px;
-}
-
-@media (max-width: 767px) {
-    .welcome_docmed_area .welcome_thumb .thumb_2 {
-        position: absolute;
-        left: 0;
-        top: 0;
-        display: none;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-    .welcome_docmed_area .welcome_thumb .thumb_2 {
-        position: absolute;
-        right: 0;
-        bottom: -40px;
-    }
-}
-
-.welcome_docmed_area .welcome_thumb .thumb_2 img {
-    width: 89%;
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-    .welcome_docmed_area .welcome_thumb .thumb_2 img {
-        width: 100%;
-    }
-}
-
-.welcome_docmed_area .welcome_docmed_info {
-    padding-left: 10px;
-}
-
-@media (max-width: 767px) {
-    .welcome_docmed_area .welcome_docmed_info {
-        padding-left: 0;
-        margin-top: 40px;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-    .welcome_docmed_area .welcome_docmed_info {
-        padding-left: 0;
-        margin-top: 100px;
-    }
-}
-
-.welcome_docmed_area .welcome_docmed_info h1 {
-    font-size: 37px;
-    font-weight: 400;
-    color: #22D09B;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    position: relative;
-    z-index: 9;
-    padding-bottom: 9px;
-}
-
-.welcome_docmed_area .welcome_docmed_info h3 {
-    font-size: 30px;
-    font-weight: 500;
-    text-align: center;
-    color: #FFFFFF;
-}
-
-@media (max-width: 767px) {
-    .welcome_docmed_area .welcome_docmed_info h3 {
-        font-size: 30px;
-    }
-}
-
-@media (max-width: 767px) {
-    .welcome_docmed_area .welcome_docmed_info h3 br {
-        display: none;
-    }
-}
-
-.welcome_docmed_area .welcome_docmed_info p {
-    font-size: 17px;
-    color: #B5B1B1;
-    line-height: 28px;
-}
-
-.welcome_docmed_area .welcome_docmed_info ul {
-    margin-bottom: 40px;
-    margin-top: 25px;
-}
-
-.welcome_docmed_area .welcome_docmed_info ul li {
-    color: #B5B1B1;
-    font-size: 16px;
-    line-height: 28px;
-}
-
-.welcome_docmed_area .welcome_docmed_info ul li i {
-    margin-right: 10px;
-    color: #22D09B;
-    font-weight: 16px;
-}
-
-
-/* Sección Bienvenidos, somos dentestic - Fin */
+/*Sección Servicio, Calidad & Garantía Dentestic*/
 
 
 /*---------------------
@@ -1031,8 +1070,9 @@ ol {
 }
 
 .class-title {
-    padding-top: 60px;
-    padding-bottom: 62px;
+    padding-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .class-title .section-title h2 {
@@ -1040,11 +1080,11 @@ ol {
 }
 
 .classes-item {
-    height: 480px;
+    height: 570px;
     margin-left: -15px;
     margin-right: -15px;
-    padding-left: 60px;
-    padding-top: 162px;
+    padding-left: 40px;
+    padding-top: 180px;
     padding-right: 35px;
 }
 
@@ -1103,22 +1143,17 @@ ol {
     display: block;
     margin: auto;
     padding-bottom: 10px;
-    width: 50%;
 }
 
-@media (max-width: 767px) {
+@media (min-width: 300px) and (max-width: 767px) {
     .sonrie {
-        max-width: 70%;
-        height: auto;
-        margin: auto;
+        width: 70%;
     }
 }
 
-@media (min-width: 768px) and (max-width: 1500px) {
+@media (min-width: 768px) and (max-width: 1920px) {
     .sonrie {
-        max-width: 90%;
-        height: auto;
-        margin: auto;
+        width: 50%;
     }
 }
 
@@ -1215,7 +1250,7 @@ ol {
 .single-price-plan {
     background: var(--GrisSecundario);
     text-align: center;
-    padding: 45px 0 50px;
+    padding: 15px 0 20px;
     position: relative;
     overflow: hidden;
     margin-bottom: 30px;
@@ -1252,7 +1287,7 @@ ol {
 }
 
 .single-price-plan .price-plan p {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 20px;
     color: var(--GrisDentestic);
     font-family: "Quicksand", sans-serif;
@@ -1363,37 +1398,39 @@ ol {
 
 .TituloPlanes {
     display: block;
+    border-top: 15px;
     margin: auto;
-    width: 55%;
+    width: 50%;
+    padding-top: 45px;
+    padding-bottom: 75px;
+}
+
+.TituloPlanes2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    text-align: center;
+    padding-top: 65px;
+    padding-bottom: 45px;
 }
 
 @media (max-width: 991px) {
-    .TituloGenerico {
-        padding-top: 70%;
-        padding-bottom: 10PX;
-        width: 90%;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 990px) {
-    .TituloGenerico {
-        width: 65%;
+    .TituloPlanes .TituloPlanes2 {
+        padding-top: 45px;
+        padding-bottom: 10px;
     }
 }
 
 @media (min-width: 1025px) and (max-width: 1920px) {
-    .TituloGenerico {
-        margin-left: 455px;
+    .TituloPlanes .TituloPlanes2 {
         padding-bottom: 100px;
     }
 }
 
 @media (max-width: 992px) {
-    .TituloGenerico {
-        max-width: 100%;
-        height: auto;
+    .TituloPlanes .TituloPlanes2 {
         margin: auto;
-        display: block !important;
     }
 }
 
@@ -1401,36 +1438,6 @@ ol {
     width: 100%;
     padding-top: 28%;
     margin-left: 50%;
-}
-
-@media (max-width: 991px) {
-    .TituloGenerico {
-        padding-top: 70%;
-        padding-bottom: 10PX;
-        width: 90%;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 990px) {
-    .TituloGenerico {
-        width: 65%;
-    }
-}
-
-@media (min-width: 1025px) and (max-width: 1920px) {
-    .TituloGenerico {
-        margin-left: 455px;
-        padding-bottom: 100px;
-    }
-}
-
-@media (max-width: 992px) {
-    .TituloGenerico {
-        max-width: 100%;
-        height: auto;
-        margin: auto;
-        display: block !important;
-    }
 }
 
 .our_department_area {
@@ -1579,7 +1586,7 @@ ol {
 }
 
 .service_area .col-xl-4:nth-child(2) .single_service {
-    background: #45E5AC;
+    background: var(--VerdeDentestic);
 }
 
 
@@ -1646,6 +1653,13 @@ ol {
     padding-left: 30px;
     padding-bottom: 30px;
     padding-right: 30px;
+}
+
+.textosHashtagsIG h4 {
+    font-family: "Quicksand" sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--GrisSecundario);
 }
 
 .blog-item .blog-text .categories {
@@ -1760,7 +1774,7 @@ ol {
 }
 
 .cta-section .cta-text h3 {
-    color: var(--BlancoDentestic);
+    color: var(--GrisSecundario);
     font-size: 40px;
     font-weight: 700;
     text-transform: lowercase;
@@ -1768,7 +1782,8 @@ ol {
 }
 
 .cta-section .cta-text p {
-    color: var(--BlancoDentestic);
+    color: var(--GrisSecundario);
+    font-weight: 500;
     text-align: center;
     font-size: 20px;
     margin-bottom: 0;
@@ -1776,11 +1791,12 @@ ol {
 
 .cta-section .primary-btn.cta-btn {
     align-items: center;
+    color: var(--GrisSecundario);
     justify-content: center;
-    border-color: var(--BlancoDentestic);
-    background-image: -webkit-gradient(linear, left top, right top, color-stop(100%, var(--BlancoDentestic)), to(var(--BlancoDentestic))), -webkit-gradient(linear, left top, right top, from(var(--BlancoDentestic)), color-stop(0%, var(--BlancoDentestic)));
-    background-image: -o-linear-gradient(left, var(--BlancoDentestic) 100%, var(--BlancoDentestic) 100%), -o-linear-gradient(left, var(--BlancoDentestic) 0%, var(--BlancoDentestic) 0%);
-    background-image: linear-gradient(to right, var(--BlancoDentestic) 100%, var(--BlancoDentestic) 100%), linear-gradient(to right, var(--BlancoDentestic) 0%, var(--BlancoDentestic) 0%);
+    border-color: var(--GrisSecundario);
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(100%, var(--GrisSecundario)), to(var(--GrisSecundario))), -webkit-gradient(linear, left top, right top, from(var(--GrisSecundario)), color-stop(0%, var(--GrisSecundario)));
+    background-image: -o-linear-gradient(left, var(--GrisSecundario) 100%, var(--GrisSecundario) 100%), -o-linear-gradient(left, var(--GrisSecundario) 0%, var(--GrisSecundario) 0%);
+    background-image: linear-gradient(to right, var(--GrisSecundario) 100%, var(--GrisSecundario) 100%), linear-gradient(to right, var(--GrisSecundario) 0%, var(--GrisSecundario) 0%);
     margin-top: 20px;
 }
 
@@ -2349,7 +2365,7 @@ ol {
     text-transform: lowercase;
     text-align: left;
     margin-bottom: 30px;
-    padding-top: 30px;
+    padding-top: 40px;
 }
 
 .aboutus-page-text .about-quality p {
@@ -2360,16 +2376,20 @@ ol {
 
 .aboutus-page-text .about-quality ul li {
     list-style: none;
-    font-size: 16px;
+    font-size: 18px;
     color: var(--BlancoDentestic);
-    line-height: 26px;
+    line-height: 22px;
     margin-bottom: 10px;
 }
 
 .aboutus-page-text .about-quality ul li i {
     color: var(--RojoDentestic);
     display: inline-block;
-    margin-right: 9px;
+    margin-right: 12px;
+}
+
+.nosotros img {
+    border-radius: 15px;
 }
 
 .SomosDentestic img {
@@ -2391,6 +2411,8 @@ ol {
     margin-left: auto;
     margin-right: auto;
 }
+
+.CitaEspecial {}
 
 
 /*---------------------
@@ -2475,7 +2497,7 @@ ol {
 -----------------------*/
 
 .trainer-section {
-    background: #151515;
+    background: var(--NegroDentestic);
     padding-top: 90px;
     padding-bottom: 70px;
 }
@@ -2520,9 +2542,9 @@ ol {
     justify-content: center;
     width: 40px;
     height: 40px;
-    font-size: 16px;
-    color: #afb4bf;
-    background: var(--BlancoDentestic);
+    font-size: 19px;
+    color: var(--GrisSecundario);
+    background: var(--GrisDentestic);
     margin-bottom: 10px;
     border-radius: 2px;
     -webkit-transition: all 0.3s;
@@ -2543,7 +2565,7 @@ ol {
     background: -o-linear-gradient(45deg, var(--VerdeDentestic), var(--VerdeSecundario));
     background: linear-gradient(45deg, var(--VerdeDentestic), var(--VerdeSecundario));
     width: 100%;
-    padding-left: 20px;
+    padding-left: 0px;
     padding-top: 15px;
     padding-bottom: 12px;
     -webkit-clip-path: polygon(0 0, 100% 0%, 81% 0, 100% 100%, 0 100%);
@@ -2553,7 +2575,7 @@ ol {
 .trainer-item .ti-pic .trainer-text h5 {
     font-size: 20px;
     color: var(--BlancoDentestic);
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .trainer-item .ti-pic .trainer-text h5 span {
@@ -2563,9 +2585,7 @@ ol {
 }
 
 
-/*---------------------
-  Gallery Section
------------------------*/
+/* Sección de Galería -*/
 
 .gallery-section {
     background: #151515;
@@ -2592,7 +2612,7 @@ ol {
 }
 
 .gallery-controls ul li.active {
-    color: var(--VerdeSecundario);
+    color: var(--VerdeDentestic);
 }
 
 .gallery-controls ul li.active:after {
@@ -2605,7 +2625,7 @@ ol {
     bottom: 1px;
     width: 100%;
     height: 2px;
-    background: #7D2719;
+    background: var(--RojoDentestic);
     content: "";
     opacity: 0;
 }
@@ -2652,13 +2672,13 @@ ol {
     top: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.8);
     content: "";
     z-index: 1;
     opacity: 0;
-    -webkit-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
 }
 
 .gallery-item .gi-hover-warp {
@@ -2682,9 +2702,9 @@ ol {
 .gallery-item .gi-hover {
     opacity: 0;
     visibility: hidden;
-    -webkit-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
 }
 
 .gallery-item .gi-hover a {
@@ -2696,7 +2716,7 @@ ol {
     line-height: 60px;
     font-size: 24px;
     display: inline-block;
-    color: var(--BlancoDentestic);
+    color: var(--VerdeSecundario);
 }
 
 .gallery-item .gi-hover a:first-child {
@@ -2704,7 +2724,7 @@ ol {
 }
 
 .gallery-item .gi-hover h6 {
-    color: var(--BlancoDentestic);
+    color: var(--GrisDentestic);
     margin-top: 25px;
 }
 
@@ -2720,9 +2740,10 @@ ol {
 }
 
 
-/*---------------------
-  Blog Page Section
------------------------*/
+/* Sección de Galería - Fin */
+
+
+/*Sección Página de Blog*/
 
 .blog-section.blog-page {
     padding-top: 100px;
@@ -2832,9 +2853,10 @@ ol {
 }
 
 
-/*---------------------
-  Blog Single Hero
------------------------*/
+/*Sección Página de Blog - Fin*/
+
+
+/* Sección de Blog Single - Hero */
 
 .blog-single-hero {
     height: 500px;
@@ -2877,9 +2899,7 @@ ol {
 }
 
 
-/*---------------------
-  Blog Single Section
------------------------*/
+/* Sección de Blog Single - Hero - Fin*/
 
 .blog-single-section {
     background: var(--NegroDentestic);
@@ -3019,7 +3039,7 @@ ol {
 
 .blog-single-sidebar .bs-latest-news .bl-item {
     position: relative;
-    background: var(--BlancoDentestic);
+    background: var(--GrisDentestic);
     padding-left: 30px;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -3039,7 +3059,7 @@ ol {
     height: 100%;
     left: 0;
     top: 0;
-    background: var(--BlancoDentestic);
+    background: var(--GrisSecundario);
     opacity: 1;
     -webkit-transition: all 0.4s;
     -o-transition: all 0.4s;
@@ -3342,7 +3362,7 @@ ol {
 -----------------------*/
 
 .contact-section {
-    background: #151515;
+    background: var(--NegroDentestic);
     padding-top: 95px;
 }
 
@@ -3352,13 +3372,15 @@ ol {
 
 .contact-section .contact-info h4 {
     color: var(--BlancoDentestic);
-    text-transform: uppercase;
+    text-transform: lowercase;
+    text-align: center;
     font-weight: 500;
     margin-bottom: 30px;
 }
 
 .contact-section .contact-info ul li {
     list-style: none;
+    text-align: center;
     font-size: 18px;
     color: var(--BlancoDentestic);
     line-height: 48px;
@@ -3375,24 +3397,25 @@ ol {
 
 .contact-section .contact-address h4 {
     color: var(--BlancoDentestic);
-    text-transform: uppercase;
+    text-transform: lowercase;
+    text-align: center;
     font-weight: 500;
     margin-bottom: 30px;
 }
 
 .contact-section .contact-address ul li {
     list-style: none;
+    text-align: center;
     font-size: 18px;
     color: var(--BlancoDentestic);
-    line-height: 25px;
+    line-height: 50px;
     position: relative;
-    padding-left: 35px;
 }
 
 .contact-section .contact-address ul li i {
-    font-size: 18px;
+    font-size: 30px;
     color: var(--VerdeSecundario);
-    margin-right: 18px;
+    line-height: 18px;
     position: absolute;
     left: 0;
     top: 7px;
@@ -3401,6 +3424,8 @@ ol {
 .contact-form h4 {
     color: var(--BlancoDentestic);
     text-transform: lowercase;
+    text-align: center;
+    padding-top: 28px;
     font-weight: 700;
     color: var(--VerdeDentestic);
     font-size: 30px;
@@ -3410,7 +3435,7 @@ ol {
 .contact-form form input {
     width: 100%;
     height: 48px;
-    border-radius: 2px;
+    border-radius: 12px;
     background: var(--GrisSecundario);
     border: none;
     padding-left: 20px;
@@ -3453,7 +3478,7 @@ ol {
 .contact-form form textarea {
     width: 100%;
     height: 198px;
-    border-radius: 2px;
+    border-radius: 6px;
     background: var(--GrisSecundario);
     border: none;
     padding-left: 20px;
@@ -3506,7 +3531,7 @@ ol {
     border: none;
     font-family: "Montserrat", sans-serif;
     border: 1px solid var(--NegroDentestic);
-    border-radius: 2px;
+    border-radius: 50px;
 }
 
 
@@ -3773,26 +3798,38 @@ ol {
     display: block;
     width: 50px;
     height: 3px;
-    background: red;
+    background: var(--RojoDentestic);
     bottom: 0;
     left: calc(50% - 25px);
 }
 
 .section-title p {
+    font-family: "Montserrat" sans-serif;
+    font-size: 18px;
     color: var(--GrisDentestic);
     margin-bottom: 0;
 }
 
-.section-titleSVG img {
-    text-align: center;
-    padding-top: 50px;
-    padding-bottom: 30px;
+@media (max-width: 767px) {
+    .section-titleSVG1 {
+        max-width: 90%;
+        height: auto;
+        margin: auto;
+        margin-bottom: auto;
+    }
 }
 
-.section-titleSVG {
+@media (min-width: 768px) and (max-width: 1500px) {
+    .section-titleSVG1 {
+        max-width: 90%;
+        height: auto;
+        margin: auto;
+    }
+}
+
+.section-titleSVG1 {
     margin-bottom: 20px;
     padding-bottom: 20px;
-    position: relative;
 }
 
 
