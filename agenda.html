@@ -50,13 +50,13 @@
         <div class="loader"></div>
     </div>
 
+
     <!-- Sección Header -->
     <header class="header-section">
         <div class="container-fluid">
             <div class="container">
                 <div class="nav-menu">
                     <div class="LogoTop">
-                        <!--  Igual el centrado se lo ajusto en mi style.css -->
                         <img src="img/logo.png" alt="DentesticLogo">
                     </div>
                     <nav class="mainmenu mobile-menu">
@@ -68,12 +68,15 @@
                                 <a href="galeria.html">Galería</a>
                             </li>
                             <li><a href="blog.html">Blog</a>
-                                <ul class="dropdown">
-                                    <li><a href="servicios.html">About Us</a></li>
-                                    <li><a href="blog-single.html">Blog Details</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="contacto.html">Contacto</a></li>
+                                <li><a href="shop.html">Shop</a>
+                                    <!--
+                                        <ul class="dropdown">
+                                     <li><a href="blog-single.html">Blog Details</a></li>
+                                       <li><a href="servicios.html">About Us</a></li>
+                                    </ul>
+                                 -->
+                                    <li><a href="contacto.html">Contacto</a></li>
+                                </li>
                         </ul>
                     </nav>
                 </div>
@@ -81,7 +84,7 @@
             <div id="mobile-menu-wrap">
             </div>
     </header>
-    <!-- Header End -->
+    <!-- Sección Header - Fin -->
 
     <!-- Breadcrumb Section Begin -->
     <section class="breadcrumb-section set-bg spad" data-setbg="img/about-bread.jpg">
@@ -107,8 +110,10 @@
         <div class="container" data-aos="fade-up">
 
             <div class="section-title">
-                <h2>Agenda tu cita</h2>
-                <p>Señor usuario: por dispociones legales y sanitarias tras la contingencia del COVID-19, nos permitimos informar que la atención al público se realiza con máximo tres .</p>
+                <h2>Nuestro sistema PQRSF</h2>
+                <p>Bienvenido al sistema de peticiones, quejas, reclamos, sugerencias y felicitaciones (PQRSF) <br> nos permitimos informar que la atención al público se realiza con las precauciones sanitarias <br>
+
+                </p>
             </div>
 
             <form action="forms/appointment.php" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
@@ -128,7 +133,7 @@
                 </div>
                 <div class="form-row">
                     <div class="col-md-4 form-group">
-                        <input type="datetime" name="date" class="form-control datepicker" id="date" placeholder="Día y hora de la consulta" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                        <input type="datetime" name="date" class="form-control datepicker" id="date" placeholder="Motivo de la consulta" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
                         <div class="validate"></div>
                     </div>
                     <div class="col-md-4 form-group">
@@ -179,12 +184,12 @@
 
         <div class="map-contact-detalis">
             <div class="open-time">
-                <h5>Horario:</h5>
+                <h5><strong>horario:</strong></h5>
                 <ul>
-                    <li>Lunes: <span>06:30 - 11:00</span></li>
-                    <li>Miércoles: <span>07:00 - 22:00</span></li>
-                    <li>Viernes: <span>09:00 - 18:00</span></li>
-                    <li>Sabado: <span>09:00 - 18:00</span></li>
+                    <li>lunes: <span>06:30 - 11:00</span></li>
+                    <li>miércoles: <span>07:00 - 22:00</span></li>
+                    <li>viernes: <span>09:00 - 18:00</span></li>
+                    <li>sabado: <span>09:00 - 18:00</span></li>
                 </ul>
             </div>
             <div class="map-contact-form">
@@ -192,9 +197,10 @@
                 <form action="#">
                     <input type="text" placeholder="Nombre">
                     <input type="text" class="phone" placeholder="Teléfono">
+                    <input type="text" class="mail" placeholder="e-Mail">
                     <textarea placeholder="Mensaje"></textarea>
                     <center>
-                        <a href="#" class="boxed-btn3-white">Enviar</a>
+                        <a href="#" class="boxed-btn3-white">enviar</a>
                     </center>
                 </form>
             </div>

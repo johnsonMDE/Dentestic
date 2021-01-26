@@ -96,8 +96,41 @@ ol {
     margin: 0;
 }
 
+th {
+    font-family: "Montserrat" sans-serif;
+    font-size: 17px;
+    color: #22D19C;
+}
+
+td {
+    font-family: "Quicksand" sans-serif;
+    font-size: 17px;
+    color: #959595;
+}
+
 
 /* Sección estilos dentestic - Ajustes generales - Fin*/
+
+.fondo {
+    background-color: var(--NegroDentestic);
+    color: white;
+}
+
+.spinner2 img {
+    max-width: 35%;
+}
+
+.NavBarShop {
+    justify-content: center;
+    display: inline-flex;
+    align-items: center;
+}
+
+.navbar-collapse {
+    font-family: "Montserrat" sans-serif;
+    font-size: 15px;
+    color: red;
+}
 
 
 /*Sección de Índices/Rutas*/
@@ -776,15 +809,15 @@ ol {
     margin-left: auto;
 }
 
-@media (min-width: 360px) and (max-width: 766px) {
+@media (min-width: 300px) and (max-width: 766px) {
     .SloganDentestic {
-        width: 65%;
+        width: 45%;
     }
 }
 
-@media (min-width: 768px) and (max-width: 1920px) {
+@media (min-width: 767px) and (max-width: 1920px) {
     .SloganDentestic {
-        width: 21%;
+        width: 25%;
     }
 }
 
@@ -795,12 +828,12 @@ ol {
 /* Sección Bienvenidos, somos dentestic */
 
 .section-titleSVG1 img {
-    width: 100%;
-    padding-top: 25%;
-    padding-bottom: 10%;
+    display: flex;
+    width: 90%;
+    padding-top: 80px;
+    padding-bottom: 40px;
     margin-right: auto;
     margin-left: auto;
-    display: flex;
 }
 
 .welcome_docmed_area {
@@ -1374,7 +1407,7 @@ ol {
     font-size: 20px;
     color: var(--VerdeSecundario);
     font-weight: 800;
-    text-transform: capitalize;
+    text-transform: lowercase;
     margin-top: 20px;
     margin-bottom: 25px;
 }
@@ -1820,7 +1853,7 @@ ol {
     background: var(--NegroDentestic);
     position: absolute;
     right: 120px;
-    top: 80px;
+    top: 30px;
     -webkit-box-shadow: 6px 6px 50px rgba(198, 198, 198, 0.2);
     box-shadow: 6px 6px 50px rgba(198, 198, 198, 0.2);
 }
@@ -1841,7 +1874,7 @@ ol {
     font-size: 20px;
     color: #22D09B;
     font-weight: 500;
-    text-transform: uppercase;
+    text-transform: lowercase;
     float: left;
 }
 
@@ -1869,7 +1902,7 @@ ol {
     font-size: 20px;
     color: #22D09B;
     font-weight: 500;
-    text-transform: uppercase;
+    text-transform: lowercase;
     margin-bottom: 20px;
 }
 
@@ -1884,6 +1917,11 @@ ol {
     border: 1px solid #e1e1e1;
     padding-left: 20px;
     border-radius: 2px;
+}
+
+.map-contact-detalis .map-contact-form form input.mail {
+    width: 100%;
+    margin-right: 0;
 }
 
 .map-contact-detalis .map-contact-form form input.phone {
@@ -2349,6 +2387,8 @@ ol {
     color: var(--VerdeDentestic);
     text-transform: lowercase;
     text-align: left;
+    margin-top: 1px;
+    padding-top: 1px;
     margin-bottom: 30px;
     padding-top: 10px;
 }
@@ -2395,6 +2435,7 @@ ol {
 .SomosDentestic img {
     margin-top: auto;
     margin-bottom: auto;
+    padding-top: 2px;
     padding: 55px;
 }
 
@@ -2603,7 +2644,7 @@ ol {
     font-size: 16px;
     font-weight: 500;
     font-family: "Montserrat", sans-serif;
-    text-transform: uppercase;
+    text-transform: lowercase;
     color: var(--BlancoDentestic);
     display: inline-block;
     margin-right: 45px;
@@ -2996,7 +3037,7 @@ ol {
     display: inline-block;
     font-size: 13px;
     color: var(--NegroDentestic);
-    text-transform: uppercase;
+    text-transform: lowercase;
     background: var(--BlancoDentestic);
     padding: 5px 20px 4px;
     border: 1px solid var(--NegroDentestic);
@@ -3289,7 +3330,7 @@ ol {
     padding: auto;
     color: var(--BlancoDentestic);
     font-weight: 500;
-    text-transform: capitalize;
+    text-transform: lowercase;
     background: -o-linear-gradient(45deg, var(--VerdeDentestic), var(--VerdeSecundario));
     background: linear-gradient(45deg, var(--VerdeDentestic), var(--VerdeSecundario));
     padding: 10px 47px;
@@ -3524,7 +3565,7 @@ ol {
     font-size: 14px;
     color: var(--BlancoDentestic);
     font-weight: 500;
-    text-transform: capitalize;
+    text-transform: lowercase;
     background: -o-linear-gradient(45deg, var(--VerdeDentestic), var(--VerdeSecundario));
     background: linear-gradient(45deg, var(--VerdeDentestic), var(--VerdeSecundario));
     padding: 12px 40px;
@@ -3630,7 +3671,7 @@ ol {
         margin: 37px 0;
     }
     .slicknav_nav {
-        background: #222;
+        background: var(--NegroDentestic);
     }
     .slicknav_nav ul {
         margin: 10px 15px;
@@ -3977,7 +4018,7 @@ ol {
     display: inline-block;
     font-size: 13px;
     color: var(--NegroDentestic);
-    text-transform: uppercase;
+    text-transform: lowercase;
     background: var(--BlancoDentestic);
     padding: 5px 20px 4px;
     border: 1px solid var(--NegroDentestic);
